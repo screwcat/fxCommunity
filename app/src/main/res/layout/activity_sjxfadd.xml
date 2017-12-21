@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whites"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/toobar_theme">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:navigationIcon="@drawable/button_details_gohome"
+            android:layout_width="match_parent"
+            android:background="@color/blue"
+            android:layout_height="?attr/actionBarSize">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="24dp"
+                android:text="消防隐患录入"
+                android:textColor="@color/whites"/>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/sjxfAdd_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_launcher" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:text="单位名称:"
+                    android:textColor="#333"
+                    android:layout_width="70dp"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:text="清水湾温泉洗浴"
+                    android:textColor="#333"
+                    android:id="@+id/sjxf_add_tv_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:text="单位地址:"
+                    android:textColor="#333"
+                    android:layout_width="70dp"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:text="朝秦暮楚福仕达"
+                    android:textColor="#333"
+                    android:id="@+id/sjxf_add_tv_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:text="单位类别:"
+                    android:textColor="#333"
+                    android:layout_width="70dp"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:text="洗浴中心"
+                    android:textColor="#333"
+                    android:id="@+id/sjxf_add_tv_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:textColor="#333"
+                android:layout_height="wrap_content"
+                android:text="隐患类别：" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true">
+                <CheckBox
+                    android:id="@+id/checkBox1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#333"
+                    android:textSize="10dp"
+                    android:text="合法性"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/edit_bg"/>
+
+                <CheckBox
+                    android:id="@+id/checkBox2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#333"
+                    android:textSize="10dp"
+                    android:text="消防设施"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/edit_bg"/>
+                <CheckBox
+                    android:id="@+id/checkBox4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#333"
+                    android:textSize="10dp"
+                    android:text="危险品"
+                    android:background="@drawable/edit_bg"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true">
+
+                <CheckBox
+                    android:id="@+id/checkBox3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_bg"
+                    android:text="建筑防火"
+                    android:textColor="#333"
+                    android:layout_marginRight="5dp"
+                    android:textSize="10dp" />
+
+                <CheckBox
+                    android:id="@+id/sjxf_checkbox_wfxwt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#333"
+                    android:textSize="10dp"
+                    android:text="未发现问题"
+                    android:background="@drawable/edit_bg" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:textColor="#333"
+            android:text="隐患描述：" />
+
+        <EditText
+            android:id="@+id/sjxf_manage_tv_five"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#333"
+            android:background="@drawable/edit_bg"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_bg">
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#333"
+            android:text="现场拍照：" />
+        <ImageView
+            android:id="@+id/qkqd_add_iv_btn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/camera_dk"/>
+        <ImageView
+            android:id="@+id/qkqd_add_iv_item"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:layout_marginRight="10dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/sjxf_add_ll_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/sjxf_zgqx_ll"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/sjxf_manage_tv_six"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#333"
+                android:text="整改期限：" />
+            <ImageButton
+                android:id="@+id/sjxf_date_btn"
+                android:layout_toRightOf="@id/sjxf_manage_tv_six"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/pay_nolick"/>
+            <TextView
+                android:id="@+id/sjxf_manage_et_zhzgqx"
+                android:layout_toRightOf="@id/sjxf_date_btn"
+                android:layout_marginLeft="10dp"
+                android:textColor="#333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2017-11-11 11:11"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/sjxf_handle_tv_nine"
+                android:layout_width="wrap_content"
+                android:textColor="#333"
+                android:layout_height="wrap_content"
+                android:text="处理结果："/>
+            <Spinner
+                android:id="@+id/sjxf_handle_spinner_chulijieguo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/spinner_one"
+                android:background="@drawable/edit_bg"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/sjxf_handle_ll_project"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/sjxf_handle_tv_ten"
+                android:layout_width="70dp"
+                android:layout_height="27dp"
+                android:textColor="#333"
+                android:text="处理项目："/>
+            <Spinner
+                android:id="@+id/sjxf_handle_spinner_chulixiangmu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/spinner_two"
+                android:background="@drawable/edit_bg"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp">
+        <Button
+            android:id="@+id/sjxf_add_Button"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="@drawable/blue_radius_shape"
+            android:textColor="@color/whites"
+            android:textSize="10dp"
+            android:text="提交"
+           android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+</LinearLayout>
+</LinearLayout>

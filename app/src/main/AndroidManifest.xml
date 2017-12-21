@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.taiji.fxsqjw.views">
+
+    <uses-sdk tools:overrideLibrary="org.lucasr.twowayview, org.lucasr.twowayview.widget, jp.wasabeef.recyclerview" />
+
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="ycgis.pstore.permission.APP" />
+
+    <application
+        android:name="com.taiji.fxsqjw.views.activities.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.taiji.fxsqjw.views.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <receiver android:name="com.taiji.fxsqjw.views.utils.ApkInstallReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name="com.taiji.fxsqjw.views.ListViewExample" />
+        <activity android:name="com.taiji.fxsqjw.views.GridViewExample" />
+        <activity android:name="com.taiji.fxsqjw.views.RecyclerViewExample" />
+        <activity android:name="com.taiji.fxsqjw.views.NestedExample" />
+        <activity
+            android:name="com.taiji.fxsqjw.views.MyActivity"
+            android:label="@string/title_activity_main" />
+        <activity
+            android:name="com.taiji.fxsqjw.views.activities.SettingsActivity"
+            android:label="@string/title_activity_setting"
+            android:parentActivityName="com.taiji.fxsqjw.views.activities.MainActivity" />
+        <activity
+            android:name="com.taiji.fxsqjw.views.activities.MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.taiji.fxsqjw.views.activities.scroll.CarManageActivity"
+            android:label="@string/title_activity_car_manage"
+            android:parentActivityName="com.taiji.fxsqjw.views.activities.MainActivity" />
+        <activity
+            android:name="com.taiji.fxsqjw.views.activities.scroll.AddCarActivity"
+            android:label="@string/title_activity_add_car"
+            android:parentActivityName="com.taiji.fxsqjw.views.activities.scroll.CarManageActivity" />
+        <activity
+            android:name="com.taiji.fxsqjw.views.activities.fx.GuideFxActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.sjxf.SJXFMangerActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.taiji.fxsqjw.views.activities.sjxf.SJXFAddActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.taiji.fxsqjw.views.activities.sjxf.SJXFDetailsActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.taiji.fxsqjw.views.activities.sjxf.SJXFHandleActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.taiji.fxsqjw.views.activities.xyaq.XYAQMangerActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.taiji.fxsqjw.views.activities.xyaq.XYAQAddActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.taiji.fxsqjw.views.activities.xyaq.XYAQDetailsActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.taiji.fxsqjw.views.activities.xyaq.XYAQHandleActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activities.sjcj.SJCJMangerActivity"
+            android:label="信息采集"
+            android:parentActivityName=".activities.fx.GuideFxActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activities.sjcj.SJCJPersonnelMessageActivity"
+            android:label="人员基本信息"
+            android:parentActivityName=".activities.sjcj.SJCJMangerActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.taiji.fxsqjw.views.activities.scroll.TaskScollActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.taiji.fxsqjw.views.activities.TodoInstructionActivity"
+            android:label="待办任务"
+            android:parentActivityName="com.taiji.fxsqjw.views.activities.MainActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.taiji.fxsqjw.views.activities.showInstructionActivity"
+            android:label="指令详情"
+            android:parentActivityName="com.taiji.fxsqjw.views.activities.MainActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.taiji.fxsqjw.views.activities.SelectRecipientActivity"
+            android:label="选择接收人"
+            android:parentActivityName="com.taiji.fxsqjw.views.activities.MainActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.taiji.fxsqjw.views.activities.KeyPersonnelActivity"
+            android:label="重点人员"
+            android:parentActivityName="com.taiji.fxsqjw.views.activities.MainActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.taiji.fxsqjw.views.activities.RealisticActivity"
+            android:label="重点人员写实"
+            android:parentActivityName="com.taiji.fxsqjw.views.activities.MainActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.taiji.fxsqjw.views.activities.openlayer.OfflineBaiduMapActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="fKDCEqFEjsunhM02B8o0sA1LFBCovWzv" />
+
+        <service
+            android:name="com.taiji.fxsqjw.views.service.LocationService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name="com.taiji.fxsqjw.views.activities.openlayer.QkqdOfflineMapActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.taiji.fxsqjw.views.activities.FxLoginActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activities.taskinfo.TestImageActivity"
+            android:label=""
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activities.sjcj.SJCJCHouseMessageActivity"
+            android:label="房屋基本信息"
+            android:parentActivityName=".activities.sjcj.SJCJMangerActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activities.sjcj.SJCJAddressWriteActivity"
+            android:label="地址填写"
+            android:parentActivityName=".activities.sjcj.SJCJPersonnelMessageActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activities.sjcj.SJCJShackPopulationActivity"
+            android:label="暂住人口"
+            android:parentActivityName=".activities.sjcj.SJCJMangerActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activities.HiddenDanDtlActivity"
+            android:label="隐患详情"
+            android:parentActivityName=".activities.MainActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activities.GuardNetworkActivity"
+            android:label="群防群治"
+            android:parentActivityName=".activities.MainActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activities.sjcj.SJCJentrustPopulationActivity"
+            android:label="寄居人口"
+            android:parentActivityName=".activities.sjcj.SJCJCHouseMessageActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activities.sjcj.SJCHireHouseActivity"
+            android:label="出租房屋信息"
+            android:parentActivityName=".activities.sjcj.SJCJMangerActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+    </application>
+
+</manifest>

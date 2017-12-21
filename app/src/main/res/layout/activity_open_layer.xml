@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.taiji.fxsqjw.views.activities.openlayer.OfflineBaiduMapActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/toobar_theme">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:navigationIcon="@drawable/button_details_gohome"
+            android:layout_width="match_parent"
+            android:background="@color/blue"
+            android:layout_height="?attr/actionBarSize">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="24dp"
+                android:text="考勤签到"
+                android:textColor="@color/whites"/>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appbar_toolbar"
+        android:clickable="true" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/offline_baidumap_kqdk"
+            android:text="考勤打卡"
+            android:textColor="@color/whites"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/btn_circle"
+            />
+        <Button
+            android:id="@+id/offline_baidumap_dkqk"
+            android:text="打卡情况"
+            android:textColor="@color/whites"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/btn_circle"/>
+
+    </LinearLayout>
+</RelativeLayout>

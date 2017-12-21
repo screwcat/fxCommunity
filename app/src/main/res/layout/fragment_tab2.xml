@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whites"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.taiji.fxsqjw.views.activities.Tab2Fragment">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/taskInfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/whites"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="任务标题："
+                android:textColor="#333"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/taskTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textview_border"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#000" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:gravity="top"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:text="任务内容："
+                android:textColor="#333"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/taskContent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/textview_border"
+                android:ems="10"
+                android:gravity="top"
+                android:hint="任务内容"
+                android:inputType="textMultiLine"
+                android:textColor="#000"
+                android:textColorHint="@color/gray" />
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/taskInfo"
+            android:background="@color/whites"
+            android:orientation="vertical">
+
+
+            <GridView
+                android:id="@+id/gvTaskPic"
+                android:layout_width="fill_parent"
+                android:layout_height="163dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:padding="2dp"
+                android:background="#C2DBFF"
+                android:columnWidth="80dp"
+                android:gravity="center"
+                android:horizontalSpacing="0dp"
+                android:numColumns="4"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="0dp"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="(友情提示:只能添加7张图片,长按图片可以删除已添加图片)"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/selectPic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/chooseRecipient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/shape"
+        android:text="请选择接收人"
+        android:textColor="@color/whites" />
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/btn_booktag"
+    android:layout_width="fill_parent"
+    android:layout_height="80dp"
+    android:layout_margin="6dp"
+    android:alpha="1"
+    android:background="@drawable/shape"
+    android:clickable="true"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="XXXX"
+        android:textColor="@color/whites"
+        android:textSize="22sp" />
+
+    <FrameLayout
+        android:id="@+id/qipao_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/tvWaitProcessNum"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:background="@drawable/tips_circle"
+            android:gravity="center"
+            android:text="XX"
+            android:textColor="#3399FE"
+            android:textSize="18dip"
+            android:textStyle="bold" />
+    </FrameLayout>
+</FrameLayout>

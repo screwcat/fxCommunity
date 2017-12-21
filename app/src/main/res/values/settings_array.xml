@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="planets_array">
+        <item>我的钱包</item>
+        <item>充值</item>
+        <item>关于我们</item>
+        <item>设置</item>
+    </string-array>
+    <string-array name="spingarr">
+        <item>指令标题</item>
+        <item>发布人</item>
+        <item>指令内容</item>
+    </string-array>
+    <string-array name="checkbox_sjxf">
+        <item>合法性</item>
+        <item>建筑防火</item>
+        <item>消防设施</item>
+        <item>危险品管理</item>
+        <item>未发现问题</item>
+    </string-array>
+    <string-array name="checkbox_xyaq">
+        <item>合法性</item>
+        <item>建筑防火</item>
+        <item>消防设施</item>
+        <item>危险品管理</item>
+        <item>未发现问题</item>
+    </string-array>
+    <string-array name="spinner_one">
+        <item>整改合格</item>
+        <item>限期整改</item>
+        <item>行政处罚</item>
+        <item>恢复使用</item>
+    </string-array>
+    <string-array name="spinner_two">
+        <item>警告</item>
+        <item>罚款</item>
+        <item>拘留</item>
+        <item>停产</item>
+        <item>停业</item>
+        <item>停工</item>
+    </string-array>
+    <string-array name="spinner_xyaq_one">
+        <item>检查合格</item>
+        <item>限期整改</item>
+        <item>行政处罚</item>
+    </string-array>
+    <string-array name="spinner_xyaq_two">
+        <item>警告</item>
+        <item>罚款</item>
+    </string-array>
+    <string-array name="personnelSearchType">
+        <item>姓名</item>
+        <item>身份证号码</item>
+        <item>手机号码</item>
+    </string-array>
+    <string-array name="spinner_sjcj_personnel_message1">
+        <item id="1">居民身份证</item>
+        <item id="2">临时居民身份证</item>
+        <item id="3">户口簿</item>
+        <item id="4">中国人民解放军军官证</item>
+        <item id="5">中国人民武装警察部队警官证</item>
+        <item id="6">暂住证</item>
+        <item id="7">出生医学证明</item>
+        <item id="8">法官证</item>
+        <item id="9">警官证</item>
+    </string-array>
+    <string-array name="spinner_sjcj_personnel_message2">
+        <item id="1">是</item>
+        <item id="2">否</item>
+    </string-array>
+    <string-array name="spinner_sjcj_personnel_message3">
+        <item id="1">暂住</item>
+        <item id="2">寄住</item>
+    </string-array>
+    <string-array name="entrustPopulationReason">
+        <item id="1">工作调度</item>
+        <item id="2">现住地系动迁区</item>
+        <item id="3">郊区非农业人口迁入市区</item>
+        <item id="4">借租房屋不能落户</item>
+        <item id="5">有两处房户口空挂一处</item>
+        <item id="6">新大楼未落户口</item>
+        <item id="7">就学</item>
+        <item id="8">农业人口购房</item>
+        <item id="9">其它</item>
+    </string-array>
+    <string-array name="entrustPopulationCategory">
+        <item id="1">出生</item>
+        <item id="2">迁入</item>
+        <item id="3">所内迁入</item>
+        <item id="4">常住变寄住</item>
+        <item id="5">从农村到城市居住</item>
+    </string-array>
+    <string-array name="householdPlaceType">
+        <item id="1">城镇</item>
+        <item id="2">农村</item>
+        <item id="3">单位内部</item>
+    </string-array>
+    <string-array name="house_character">
+        <item id="1">国有房产</item>
+        <item id="2">集体所有房产</item>
+        <item id="3">私有房产</item>
+        <item id="4">联营企业房产</item>
+        <item id="5">股份制企业房产</item>
+        <item id="6">港、澳、台胞房产</item>
+        <item id="7">涉外房产</item>
+        <item id="8">其他</item>
+    </string-array>
+    <string-array name="house_type">
+        <item id="1">单元楼、公寓楼</item>
+        <item id="2">筒子楼</item>
+        <item id="3">别墅</item>
+        <item id="4">自建楼</item>
+        <item id="5">平房</item>
+        <item id="6">四合院</item>
+        <item id="7">其他</item>
+    </string-array>
+    <string-array name="house_use">
+        <item id="1">住宅</item>
+        <item id="2">工业、交通、仓储</item>
+        <item id="3">商业、金融、信息</item>
+        <item id="4">教育、医疗、卫生、科研</item>
+        <item id="5">文化、娱乐、体育</item>
+        <item id="6">办公</item>
+        <item id="7">军事</item>
+        <item id="8">其他</item>
+    </string-array>
+    <string-array name="is_rent">
+        <item id="1">是</item>
+        <item id="2">否</item>
+    </string-array>
+    <string-array name="owner_credential_type">
+        <item id="1">居民身份证</item>
+        <item id="2">临时居民身份证</item>
+        <item id="3">户口簿</item>
+        <item id="4">中国人民解放军军官证</item>
+        <item id="5">中国人民武装警察部队警官证</item>
+        <item id="6">暂住证</item>
+        <item id="7">出生医学证明</item>
+        <item id="8">法官证</item>
+        <item id="9">警官证</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whites"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/toobar_theme">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:navigationIcon="@drawable/button_details_gohome"
+            android:layout_width="match_parent"
+            android:background="@color/blue"
+            android:layout_height="?attr/actionBarSize">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="24dp"
+                android:text="处理隐患"
+                android:textColor="@color/whites"/>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/sjxf_details_ll_head"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/appbar_toolbar"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/sjxfDetails_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="vertical"
+            android:paddingLeft="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:text="单位名称:"
+                    android:textColor="#333"
+                    android:layout_width="70dp"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:text="清水湾温泉洗浴"
+                    android:textColor="#333"
+                    android:id="@+id/sjxf_add_tv_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:text="单位地址:"
+                    android:textColor="#333"
+                    android:layout_width="70dp"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:text="朝秦暮楚福仕达"
+                    android:textColor="#333"
+                    android:id="@+id/sjxf_add_tv_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:text="单位类别:"
+                    android:textColor="#333"
+                    android:layout_width="70dp"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:text="洗浴中心"
+                    android:textColor="#333"
+                    android:id="@+id/sjxf_add_tv_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sjxf_details_ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/sjxf_details_ll_head">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/sjxf_details_tv_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#333"
+                android:gravity="center"
+                android:text="隐患类别：" />
+            <TextView
+                android:id="@+id/sjxf_details_tv_yinhuanleibie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#333"
+                android:background="@drawable/edit_bg"
+                android:text="" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+            <TextView
+                android:id="@+id/sjxf_details_tv_fix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#333"
+                android:gravity="center"
+                android:text="隐患描述：" />
+
+
+            <TextView
+                android:id="@+id/sjxf_details_tv_yinhuanmiaoshu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#333"
+                android:background="@drawable/edit_bg"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:background="@drawable/edit_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#333"
+                android:text="现场照片：" />
+
+            <ImageView
+                android:id="@+id/qkqd_add_iv_item"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="5dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.19"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="责令时间："
+                android:textColor="#333" />
+
+            <TextView
+                android:id="@+id/sjxf_handle_tv_zelingshijian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_bg"
+                android:text="2017/10/10"
+                android:textColor="#333" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sjxf_zgqx_ll"
+            android:visibility="gone"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.19"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#333"
+                android:gravity="center"
+                android:text="最后期限：" />
+            <TextView
+                android:id="@+id/sjxf_handle_tv_zuihouqixian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_bg"
+                android:textColor="#333"
+                android:text="2017/10/10" />
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.02"
+            android:padding="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/sjxf_handle_tv_nine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#333"
+                android:gravity="center"
+                android:text="处理结果："/>
+            <Spinner
+                android:id="@+id/sjxf_handle_spinner_chulijieguo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#333"
+                android:background="@drawable/edit_bg"
+                android:entries="@array/spinner_one"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/sjxf_handle_ll_project"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/sjxf_handle_tv_ten"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#333"
+                android:gravity="center"
+                android:text="处理项目："/>
+            <Spinner
+                android:id="@+id/sjxf_handle_spinner_chulixiangmu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#333"
+                android:entries="@array/spinner_two"
+                android:background="@drawable/edit_bg"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/sjxf_details_ll_btns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:layout_marginBottom="5dp">
+        <Button
+            android:id="@+id/sjxf_details_one_Button"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="@drawable/blue_radius_shape"
+            android:textColor="@color/whites"
+            android:text="保存"/>
+    </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

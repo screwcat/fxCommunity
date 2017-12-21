@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/top_search_ll"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/backgroundColor"
+    android:layout_below="@id/appbar_toolbar"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+
+    <EditText
+        android:id="@+id/top_task_search_edit"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:background="@drawable/shape_write"
+        android:textSize="16sp"
+        android:hint="请输入关键字"
+        android:textColorHint="@color/dark_gray"
+        android:minWidth="180sp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#000"/>
+
+    <ImageButton
+        android:id="@+id/top_task_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="#00000000"
+        android:minHeight="45sp"
+        android:minWidth="45sp"
+        android:src="@drawable/search_two" />
+
+</LinearLayout>

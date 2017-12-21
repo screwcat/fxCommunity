@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:innerRadius="100dp"
+    android:thickness="0dp"
+    android:useLevel="false"
+    android:shape="ring">
+
+    <!-- 边框的宽度和颜色颜色 -->
+    <stroke
+        android:width="10dp"
+        android:color="#428aae" />
+
+    <!-- 背景色 -->
+    <solid android:color="#FFF"></solid>
+</shape>

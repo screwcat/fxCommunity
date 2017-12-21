@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.taiji.fxsqjw.views.activities.scroll.CarManageActivity">
+    <item
+        android:id="@+id/action_addcar"
+        android:orderInCategory="100"
+        android:title="添加车辆" />
+</menu>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whites"
+    tools:context="com.taiji.fxsqjw.views.activities.fx.GuideFxActivity">
+
+    <LinearLayout
+        android:id="@+id/guide_tv_login_ll"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:orientation="horizontal"
+        android:background="#3399FE"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <ImageView
+            android:id="@+id/headPortrait"
+            android:layout_marginLeft="20dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/login_uname"/>
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/whites"
+            android:textSize="22dp"
+            android:gravity="center_vertical"
+            android:text="你好"/>
+        <TextView
+            android:id="@+id/guide_tv_login_name"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/whites"
+            android:textSize="22dp"
+            android:gravity="center_vertical"
+            android:text="胡南"/>
+    </LinearLayout>
+
+    <com.taiji.fxsqjw.views.layout.GuideGridLayout
+        android:id="@+id/list"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="120dp"
+        android:layout_width="fill_parent"
+        android:layout_height="310dp"
+        android:orientation="vertical"
+        app:itemMargin="15"
+        app:numColumns="3" >
+
+    </com.taiji.fxsqjw.views.layout.GuideGridLayout>
+
+    <com.taiji.fxsqjw.views.layout.GuideGridLayout
+        android:id="@+id/list_bottom"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        app:itemMargin="20"
+        app:numColumns="1" >
+
+    </com.taiji.fxsqjw.views.layout.GuideGridLayout>
+</RelativeLayout>

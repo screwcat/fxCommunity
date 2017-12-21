@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    tools:context=".activities.sjcj.SJCJMangerActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/toobar_theme">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:navigationIcon="@drawable/button_details_gohome"
+            android:layout_width="match_parent"
+            android:background="@color/blue"
+            android:layout_height="?attr/actionBarSize">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="24dp"
+                android:text="数据采集"
+                android:textColor="@color/whites"/>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/appbar_toolbar"
+        android:layout_height="100dp">
+
+        <Button
+            android:id="@+id/sjcj_manage_one_Button"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="@drawable/blue_radius_shape"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="社区"
+            android:textColor="@color/whites" />
+
+        <Button
+
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="@drawable/blue_radius_shape"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="国保"
+            android:textColor="@color/whites" />
+        <Button
+
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="@drawable/blue_radius_shape"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="反恐"
+            android:textColor="@color/whites" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="100dp"
+        android:id="@+id/linearLayout">
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="@drawable/blue_radius_shape"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="25dp"
+            android:text="治安"
+            android:textColor="@color/whites" />
+
+        <Button
+
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="@drawable/blue_radius_shape"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="25dp"
+            android:text="禁毒"
+            android:textColor="@color/whites" />
+        <Button
+
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="@drawable/blue_radius_shape"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="25dp"
+            android:text="保安"
+            android:textColor="@color/whites" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="@drawable/blue_radius_shape"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="25dp"
+            android:text="内保"
+            android:textColor="@color/whites" />
+
+        <Button
+
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="@drawable/blue_radius_shape"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="25dp"
+            android:text="食药侦"
+            android:textColor="@color/whites" />
+        <Button
+
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="@drawable/blue_radius_shape"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="25dp"
+            android:text="警卫处"
+            android:textColor="@color/whites" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="300dp">
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="@drawable/blue_radius_shape"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="25dp"
+            android:text="出入境"
+            android:textColor="@color/whites" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/sjcj_LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:visibility="invisible"
+        android:layout_marginTop="400dp">
+
+
+        <Button
+            android:id="@+id/sjcj_manage_two_Button"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="@drawable/blue_radius_shape"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="25dp"
+            android:text="人口信息采集"
+            android:textColor="@color/whites"/>
+        <Button
+            android:id="@+id/sjcj_manage_three_Button"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="@drawable/blue_radius_shape"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="25dp"
+            android:text="房屋信息采集"
+            android:textColor="@color/whites"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whites"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/toobar_theme">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:navigationIcon="@drawable/button_details_gohome"
+            android:layout_width="match_parent"
+            android:background="@color/blue"
+            android:layout_height="?attr/actionBarSize">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="24dp"
+                android:text="人员数据采集"
+                android:textColor="@color/whites"/>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:textColor="#333333"
+            android:text="居  住  地：" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="120dp"
+            android:id="@+id/person_message1"
+            android:background="@drawable/textview_border"
+            android:textColor="#333333"
+            android:text="请选择居住地"/>
+        <Button
+            android:id="@+id/sjcj_person_button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="选择"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:textColor="#333333"
+            android:text="证件类型：" />
+
+        <Spinner
+            android:id="@+id/credential_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:background="#EEEEEE"
+            android:entries="@array/spinner_sjcj_personnel_message1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:textColor="#333333"
+            android:text="证件号码：" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/credential_code"
+            android:textColor="#333333"
+            android:background="@drawable/edit_bg" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:textColor="#333333"
+            android:text="联系电话：" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/phone"
+            android:textColor="#333333"
+            android:background="@drawable/edit_bg" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:textColor="#333333"
+            android:text="职        业：" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/work"
+            android:textColor="#333333"
+            android:background="@drawable/edit_bg" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:textColor="#333333"
+            android:text="工作单位：" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/unit"
+            android:textColor="#333333"
+            android:background="@drawable/edit_bg" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:textColor="#333333"
+            android:text="居住住所：" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/location"
+            android:textColor="#333333"
+            android:background="@drawable/edit_bg" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:textColor="#333333"
+            android:text="是否承租：" />
+
+        <Spinner
+            android:id="@+id/sjcj_personnel_message2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EEEEEE"
+            android:entries="@array/spinner_sjcj_personnel_message2"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:textColor="#333333"
+            android:text="人口种类：" />
+
+        <Spinner
+            android:id="@+id/sjcj_personnel_message3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EEEEEE"
+            android:entries="@array/spinner_sjcj_personnel_message3"/>
+
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/sjcj_personnel_messageButton"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/blue_radius_shape"
+            android:text="下一步"
+            android:textColor="@color/whites"
+            android:visibility="invisible" />
+
+        <Button
+        android:id="@+id/sjcj_person_message_save"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/blue_radius_shape"
+        android:text="保存"
+        android:textColor="@color/whites"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/sjcj_person_message_continue_save"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/blue_radius_shape"
+        android:textColor="@color/whites"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        android:text="保存并继续添加" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whites"
+    android:orientation="vertical"
+
+    android:weightSum="1">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/toobar_theme">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:navigationIcon="@drawable/button_details_gohome"
+            android:layout_width="match_parent"
+            android:background="@color/blue"
+            android:layout_height="?attr/actionBarSize">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="24dp"
+                android:text="房屋信息采集"
+                android:textColor="@color/whites"/>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:textColor="#333333"
+                android:text="房  屋  地  址：" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="120dp"
+                android:background="@drawable/textview_border"
+                android:textColor="#333333"
+                android:text="请选择房屋地址"/>
+            <Button
+                android:id="@+id/sjcj_house_button"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="查找"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:textColor="#333333"
+                android:text="房  屋  性  质：" />
+
+            <Spinner
+                android:id="@+id/house_character"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/house_character"
+                android:background="#EEEEEE"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:text="房  屋  类  别："
+                android:textColor="#333333" />
+
+            <Spinner
+                android:id="@+id/house_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/house_type"
+                android:background="#EEEEEE"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:textColor="#333333"
+                android:text="房  屋  用  途：" />
+
+            <Spinner
+                android:id="@+id/house_use"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/house_use"
+                android:background="#EEEEEE"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:text="房  屋  间  数："
+                android:textColor="#333333" />
+
+            <EditText
+                android:id="@+id/room_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_bg"
+                android:textColor="#333333"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:textColor="#333333"
+                android:text="房  屋  面  积：" />
+
+            <EditText
+                android:id="@+id/square"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_bg"
+                android:textColor="#333333"
+                android:inputType="phone" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:textColor="#333333"
+                android:text="是否出租房屋：" />
+
+            <Spinner
+                android:id="@+id/is_rent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/is_rent"
+                android:background="#EEEEEE"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:textColor="#333333"
+                android:text="房主证件类型：" />
+
+            <Spinner
+                android:id="@+id/owner_credential_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/owner_credential_type"
+                android:background="#EEEEEE"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:textColor="#333333"
+                android:text="房主证件号码：" />
+
+            <EditText
+                android:id="@+id/owner_credential_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_bg"
+                android:textColor="#333333" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:textColor="#333333"
+                android:text="房主联系电话：" />
+
+            <EditText
+                android:id="@+id/owner_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_bg"
+                android:textColor="#333333"/>
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/house_next_step"
+            android:layout_width="120dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="下一步"
+            android:visibility="invisible"
+            android:background="@drawable/blue_radius_shape"
+            android:layout_height="35dp" />
+        <Button
+            android:id="@+id/sjcj_house_message_Button"
+            android:layout_width="120dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="保存"
+            android:visibility="invisible"
+            android:background="@drawable/blue_radius_shape"
+            android:layout_height="35dp" />
+
+        <Button
+            android:id="@+id/sjcj_house_message_continue_save"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/blue_radius_shape"
+            android:text="保存并继续添加"
+            android:visibility="invisible" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
